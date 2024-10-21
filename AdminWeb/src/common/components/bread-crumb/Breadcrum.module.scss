@@ -1,0 +1,42 @@
+.breadcrumb {
+    font-weight: $fw600;
+    color: #333333;
+
+    :global {
+        .ant-breadcrumb-link {
+            color: #333333;
+        }
+
+        .ant-breadcrumb-separator {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-inline: 4px;
+        }
+    }
+
+    .breadcrumbIcon {
+        margin-right: $s8;
+        color: #0f2554;
+
+        svg {
+            font-size: $s16;
+        }
+    }
+
+    .breadcrumbItem {
+        padding: 0.125rem $s4;
+        border-radius: 0.125rem;
+        font-size: $f13;
+        // padding-left: 0px;
+    }
+
+    .canClickBreadcrumb {
+        cursor: pointer;
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.06);
+            text-decoration: underline;
+        }
+    }
+}

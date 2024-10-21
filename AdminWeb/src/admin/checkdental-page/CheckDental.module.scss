@@ -1,0 +1,13 @@
+.knowledge {
+    padding: 20px;
+}
+
+.knowledgeWrap {
+    :global {
+        .control-bar {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+    }
+}

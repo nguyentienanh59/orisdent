@@ -1,0 +1,71 @@
+.loadingWapper {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.4);
+
+    :global {
+        svg {
+            overflow: visible;
+            width: 100px;
+            height: 150px;
+
+            g {
+                animation: slide 2s linear infinite;
+
+                &:nth-child(2) {
+                    animation-delay: 2s / 4;
+
+                    path {
+                        animation-delay: 2s / 4;
+                        stroke-dasharray: 0px 157px + 1;
+                        stroke-dashoffset: 1px;
+                    }
+                }
+            }
+
+            path {
+                stroke: url(#gradient);
+                stroke-width: 20px;
+                stroke-linecap: round;
+                fill: none;
+                stroke-dasharray: 0 157px;
+                stroke-dashoffset: 0;
+                animation: escalade 2s cubic-bezier(0.8, 0, 0.2, 1) infinite;
+            }
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateY(-50px);
+            }
+
+            100% {
+                transform: translateY(50px);
+            }
+        }
+
+        @keyframes escalade {
+            0% {
+                stroke-dasharray: 0 157px;
+                stroke-dashoffset: 0;
+            }
+
+            50% {
+                stroke-dasharray: 157px 157px;
+                stroke-dashoffset: 0;
+            }
+
+            100% {
+                stroke-dasharray: 157px 157px;
+                stroke-dashoffset: -(157px - 1);
+            }
+        }
+    }
+}

@@ -1,0 +1,290 @@
+.ant-form-item-label {
+  font-weight: 600;
+}
+
+.fullModal {
+  width: 100vw !important;
+  height: 100vh;
+  height: 100dvh;
+  max-width: 100vw;
+  max-height: 100vh;
+  max-height: 100dvh;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  inset-inline-end: 0;
+  bottom: 0;
+  inset-inline-start: 0;
+  outline: 0;
+  padding: 0;
+}
+
+.role-header-wrap {
+  position: fixed;
+  top: 0;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 99%;
+  border-bottom: 1px solid #e2e7ec;
+  background-color: #ffffff;
+  z-index: 10;
+}
+
+.hidden {
+  display: none;
+}
+
+.ant-modal-content {
+  width: 100vw !important;
+  min-height: 100vh !important;
+  min-height: 100dvh !important;
+  max-width: 100vw;
+  max-height: 100vh;
+  max-height: 100dvh;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  inset-inline-end: 0;
+  bottom: 0;
+  inset-inline-start: 0;
+  outline: 0;
+  padding: 0;
+  background-color: #f8fbfe;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ant-modal-body {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: calc(100% - 104px);
+  margin-bottom: 24px;
+  margin-top: 80px;
+  box-shadow: 0px 0px 12px rgba(18, 22, 27, 0.0784313725);
+  overflow-y: hidden;
+  position: relative;
+}
+
+.ant-modal-body::-webkit-scrollbar {
+  display: none;
+}
+
+.bodya {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 58px;
+  padding-bottom: calc(60px + 24px);
+  gap: 24px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.nameCon {
+  margin-left: 12px;
+  margin-right: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.name {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 600;
+  word-break: break-all;
+}
+
+.time {
+  font-size: 14px;
+  line-height: 19px;
+  color: #5e6670;
+}
+
+.divider {
+  margin: 0;
+}
+
+.sub-title {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 600;
+}
+
+.sub-content {
+  margin-top: 8px;
+  line-height: 19px;
+}
+
+.ant-list {
+  border-radius: 6px;
+}
+
+.ant-list-item {
+  padding: 15px 15px 14px;
+}
+
+.wrap-content {
+  padding: 16px;
+  margin-top: 12px;
+  border: 1px solid #e2e7ec;
+  line-height: 19px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info-div {
+  margin: 8px 0 16px 0;
+  display: flex;
+  align-items: flex-start;
+}
+
+.info-div-signature {
+  margin: 0 0 12px 0;
+  line-height: 19px;
+}
+
+.info-icon {
+  font-size: 16px;
+  color: #0072d0;
+  margin-right: 8px;
+  margin-top: 3px;
+}
+
+.error-icon {
+  font-size: 16px;
+  margin-right: 3.81px;
+  color: #d01b1b;
+  margin-top: 3px;
+}
+
+.action-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  height: 60px;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  border-top: 1px solid #e7ecef;
+  padding-inline: 58px;
+  background-color: #ffffff;
+  z-index: 9999;
+}
+
+.irSignatureWrap {
+  width: 800px;
+}
+
+.title {
+  width: 100%;
+  height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 22px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #12161b;
+  text-align: center;
+  padding-inline: 16px;
+}
+
+.ComptReporttextitem {
+  display: flex;
+  color: #333333;
+  margin-bottom: 16px;
+}
+.ComptReporttextitem .greyedOutLabel {
+  color: #aaaaaa !important;
+  background-color: #eaeff4;
+}
+
+.ComptReporttextitem .greyedOutText {
+  color: #aaaaaa !important;
+}
+
+.compt-reporttextitem-label {
+  background: #eaeff4;
+  padding: 7px 8px;
+  font-weight: 600;
+  line-height: 19px;
+  border-radius: 4px;
+  width: 9.375rem;
+  font-size: 0.875rem;
+  color: #333333;
+}
+
+.compt-reporttextitem-text {
+  flex: 1;
+  padding: 7px 8px;
+  word-break: break-word;
+  line-height: 20px;
+  font-size: 0.875rem;
+  padding-right: 24px;
+  color: #222222;
+}
+
+.avatar img {
+  width: 50px;
+  height: 40px;
+  object-fit: contain;
+}
+.d-two-rows {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+}
+
+@media only screen and (max-width: 768px) {
+  .irSignatureWrap {
+    width: 100%;
+    margin-top: 56px;
+    margin-bottom: 0;
+    height: calc(100% - 48px);
+  }
+
+  .compt-reporttextitem-label {
+    width: 120px !important;
+  }
+
+  .compt-reporttextitem-text {
+    padding: 0 8px;
+    padding-right: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .ant-modal-content .ant-modal-body {
+    min-height: 100%;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .bodya {
+    padding-inline: 16px;
+  }
+
+  .action-bottom {
+    padding-inline: 16px;
+  }
+  .ant-modal-root .ant-modal {
+    max-width: 100%;
+    margin: 0;
+  }
+}

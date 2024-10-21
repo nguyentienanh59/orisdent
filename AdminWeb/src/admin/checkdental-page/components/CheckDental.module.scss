@@ -1,0 +1,101 @@
+.paragraph {
+    margin-bottom: 0 !important;
+    font-size: 14px;
+}
+
+.knowledgeId {
+    color: #0c7d8f;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:active,
+    &:focus {
+        text-decoration: underline;
+        color: #006677 !important;
+    }
+}
+
+
+
+.hiddenColumn {
+    display: none;
+}
+
+.action {
+    text-align: center !important;
+    display: flex;
+}
+
+.tableknowledgeData {
+    :global {
+        .ant-table-tbody>tr:not(.ant-table-measure-row)>td {
+            height: 56px !important;
+        }
+
+        .tableColumns {
+            white-space: nowrap;
+            word-break: keep-all;
+        }
+    }
+
+}
+
+.divButton {
+    transition: 0.3s ease-in-out;
+
+    :hover {
+        transition: 0.3s ease-in-out;
+        // background-color: $gray;
+    }
+}
+
+.operateIconDisabled {
+    cursor: not-allowed;
+    display: flex;
+    padding: $s8;
+
+    .iconFontSize {
+        width: $s16;
+        height: $s16;
+    }
+
+    .addAdmission-text {
+        padding-right: $s8;
+        padding-left: $s4;
+        color: #0e2554;
+        font-weight: 600;
+        font-size: $f14;
+    }
+}
+
+.operateIcon {
+    cursor: pointer;
+    display: flex;
+    padding: $s8;
+
+    .iconFontSize {
+        width: $s16;
+        height: $s16;
+    }
+
+    .addAdmission-text {
+        padding-right: $s8;
+        padding-left: $s4;
+        color: #0e2554;
+        font-weight: 600;
+        font-size: $f14;
+    }
+}
+
+.operate-icon:disabled {
+    .addAdmission-text {
+        color: gray;
+    }
+}
+
+.btnAction {
+    min-height: 40px;
+}
