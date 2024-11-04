@@ -18,7 +18,7 @@ const DentalTable = (props: IProp) => {
 
   const columns: ColumnsType<A> = [
     {
-      title: 'Số thẻ',
+      title: 'Mã thẻ',
       dataIndex: 'numberCard',
       key: 'numberCard',
       className: `tableColumns`,
@@ -51,44 +51,65 @@ const DentalTable = (props: IProp) => {
     },
     {
       title: 'Răng sứ',
-      dataIndex: 'teeth',
-      key: 'teeth',
-      className: `tableColumns`,
-      render: (_, record) => {
-        return (
-          <>
-            <Paragraph className={styles.paragraph} ellipsis={{ rows: 2, expandable: false }}>
-              {record.teeth ?? 'N/A'}
-            </Paragraph>
-            <Paragraph className={styles.paragraph} ellipsis={{ rows: 2, expandable: false }}>
-              {record.color ?? 'N/A'}
-            </Paragraph>
-          </>
-        );
-      }
-    },
-    {
-      title: 'Ngày làm',
-      dataIndex: 'dentalDay',
-      key: 'dentalDay',
+      dataIndex: 'type',
+      key: 'type',
       className: `tableColumns`,
       render: (_, record) => {
         return (
           <Paragraph className={styles.paragraph} ellipsis={{ rows: 2, expandable: false }}>
-            {record.startDate ?? 'N/A'}
+            {record.type ?? 'N/A'}
           </Paragraph>
         );
       }
     },
     {
-      title: 'Hạn sử dụng',
-      dataIndex: 'expiry',
-      key: 'expiry',
+      title: 'Ngày kích hoạt',
+      dataIndex: 'activationDate',
+      key: 'activationDate',
       className: `tableColumns`,
       render: (_, record) => {
         return (
           <Paragraph className={styles.paragraph} ellipsis={{ rows: 2, expandable: false }}>
-            {record.expiry}
+            {record.activationDate ?? 'N/A'}
+          </Paragraph>
+        );
+      }
+    },
+    {
+      title: 'Thời hạn tới',
+      dataIndex: 'deadlineDate',
+      key: 'deadlineDate',
+      className: `tableColumns`,
+      render: (_, record) => {
+        return (
+          <Paragraph className={styles.paragraph} ellipsis={{ rows: 2, expandable: false }}>
+            {record.deadlineDate}
+          </Paragraph>
+        );
+      }
+    },
+    {
+      title: 'Bác sĩ',
+      dataIndex: 'doctor',
+      key: 'doctor',
+      className: `tableColumns`,
+      render: (_, record) => {
+        return (
+          <Paragraph className={styles.paragraph} ellipsis={{ rows: 2, expandable: false }}>
+            {record.doctor ?? 'N/A'}
+          </Paragraph>
+        );
+      }
+    },
+    {
+      title: 'Nha khoa',
+      dataIndex: 'nameDental',
+      key: 'nameDental',
+      className: `tableColumns`,
+      render: (_, record) => {
+        return (
+          <Paragraph className={styles.paragraph} ellipsis={{ rows: 2, expandable: false }}>
+            {record.nameDental ?? 'N/A'}
           </Paragraph>
         );
       }
@@ -107,7 +128,46 @@ const DentalTable = (props: IProp) => {
       }
     },
     {
-      title: 'Nguồn gốc',
+      title: 'Loại đĩa',
+      dataIndex: 'type',
+      key: 'type',
+      className: `tableColumns`,
+      render: (_, record) => {
+        return (
+          <Paragraph className={styles.paragraph} ellipsis={{ rows: 2, expandable: false }}>
+            {record.type ?? 'N/A'}
+          </Paragraph>
+        );
+      }
+    },
+    {
+      title: 'Số lượng răng',
+      dataIndex: 'numberOfTeeth',
+      key: 'numberOfTeeth',
+      className: `tableColumns`,
+      render: (_, record) => {
+        return (
+          <Paragraph className={styles.paragraph} ellipsis={{ rows: 2, expandable: false }}>
+            {record.numberOfTeeth ?? 'N/A'}
+          </Paragraph>
+        );
+      }
+    },
+    {
+      title: 'Vị trí răng',
+      dataIndex: 'toothPosition',
+      key: 'toothPosition',
+      className: `tableColumns`,
+      render: (_, record) => {
+        return (
+          <Paragraph className={styles.paragraph} ellipsis={{ rows: 2, expandable: false }}>
+            {record.toothPosition ?? 'N/A'}
+          </Paragraph>
+        );
+      }
+    },
+    {
+      title: 'Xuất xứ',
       dataIndex: 'source',
       key: 'source',
       className: `tableColumns`,

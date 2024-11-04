@@ -6,7 +6,7 @@ const LoginNav = lazy(() => import('@/components/login-nav/LoginNav'));
 
 export const routers: IRouter.IRoute[] = [
   {
-    path: '/admin',
+    path: '/',
     element: AdminLayout,
     name: 'admin',
     meta: { pageTitle: 'admin' },

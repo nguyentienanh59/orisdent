@@ -91,7 +91,8 @@ const CheckDentalModal = (
       showLoading('onfinish');
       const payload: A = {
         ...val,
-        id: dataDental?.id
+        id: dataDental?.id,
+        teeth: 'teeth'
       };
       const { data } =
         payload?.id === undefined
@@ -155,7 +156,7 @@ const CheckDentalModal = (
               <Form.Item
                 rules={[{ required: true, message: 'Vui lòng điền số thẻ khách hàng.' }]}
                 name="numberCard"
-                label="Số thẻ"
+                label="Mã thẻ"
               >
                 <Input maxLength={150} />
               </Form.Item>
@@ -165,7 +166,7 @@ const CheckDentalModal = (
                 <Form.Item
                   rules={[{ required: true, message: 'Vui lòng điền họ và tên khách hàng.' }]}
                   name="name"
-                  label="Họ và tên"
+                  label="Bệnh nhân"
                 >
                   <Input maxLength={150} />
                 </Form.Item>
@@ -189,26 +190,41 @@ const CheckDentalModal = (
                 <Input maxLength={150} />
               </Form.Item>
             </Col>
-            <Col sm={24}>
-              <Form.Item name="teeth" label="Răng sứ">
-                <Input maxLength={150} />
-              </Form.Item>
-            </Col>
             <Row gutter={[8, 8]}>
               <Col sm={24} xl={12}>
                 <Form.Item
-                  rules={[{ required: true, message: 'Vui lòng điền ngày làm.' }]}
-                  name="startDate"
-                  label="Ngày làm"
+                  rules={[{ required: true, message: 'Vui lòng điền ngày kích.' }]}
+                  name="activationDate"
+                  label="Ngày kích hoạt"
                 >
                   <Input maxLength={150} />
                 </Form.Item>
               </Col>
               <Col sm={24} xl={12}>
                 <Form.Item
-                  rules={[{ required: true, message: 'Vui lòng điền hạn sử dụng.' }]}
-                  name="expiry"
-                  label="Hạn sử dụng"
+                  rules={[{ required: true, message: 'Vui lòng điền thời hạn sử dụng.' }]}
+                  name="deadlineDate"
+                  label="Thời hạn tới"
+                >
+                  <Input maxLength={150} />
+                </Form.Item>
+              </Col>
+            </Row>
+            <Row gutter={[8, 8]}>
+              <Col sm={24} xl={12}>
+                <Form.Item
+                  rules={[{ required: true, message: 'Vui lòng điền tên bác sĩ.' }]}
+                  name="doctor"
+                  label="Bác sĩ"
+                >
+                  <Input maxLength={150} />
+                </Form.Item>
+              </Col>
+              <Col sm={24} xl={12}>
+                <Form.Item
+                  rules={[{ required: true, message: 'Vui lòng điền tên nha khoa.' }]}
+                  name="nameDental"
+                  label="Nha khoa"
                 >
                   <Input maxLength={150} />
                 </Form.Item>
@@ -220,10 +236,35 @@ const CheckDentalModal = (
               </Form.Item>
             </Col>
             <Col sm={24}>
-              <Form.Item name="source" label="Nguồn gốc">
+              <Form.Item name="type" label="Loại đĩa">
                 <Input maxLength={150} />
               </Form.Item>
             </Col>
+            <Col sm={24}>
+              <Form.Item name="source" label="Xuất xứ">
+                <Input maxLength={150} />
+              </Form.Item>
+            </Col>
+            <Row gutter={[8, 8]}>
+              <Col sm={24} xl={12}>
+                <Form.Item
+                  rules={[{ required: true, message: 'Vui lòng điền số răng.' }]}
+                  name="numberOfTeeth"
+                  label="Số lượng răng"
+                >
+                  <Input maxLength={150} />
+                </Form.Item>
+              </Col>
+              <Col sm={24} xl={12}>
+                <Form.Item
+                  rules={[{ required: true, message: 'Vui lòng điền vị trí răng.' }]}
+                  name="toothPosition"
+                  label="Vị trí răng"
+                >
+                  <Input maxLength={150} />
+                </Form.Item>
+              </Col>
+            </Row>
           </Form>
         </div>
       </Modal>

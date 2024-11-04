@@ -4,7 +4,7 @@ const CheckDental = lazy(() => import('@/admin/checkdental-page/CheckDental'));
 
 const routes: IRouter.IRoute[] = [
   {
-    path: '/admin',
+    path: '/',
     element: CheckDental,
     name: 'admin',
     meta: { pageTitle: 'admin' },
