@@ -1,54 +1,92 @@
-import React from 'react';
-import Link from "next/link"
 export default function Team() {
-  const teamMembers = [
-    { name: 'Black Marvin', role: 'Medical Assistant', image: 'assets/images/team/team-1.jpg' },
-    { name: 'Eleanor Pena', role: 'Doctor', image: 'assets/images/team/team-2.jpg' },
-    { name: 'Arlene Maccy', role: 'Nursing Assistant', image: 'assets/images/team/team-3.jpg' },
-    { name: 'Jenny Wilson', role: 'Senior Doctor', image: 'assets/images/team/team-4.jpg' },
-  ];
-
   return (
-    <section className="team-section sec-pad centred">
-      <div className="pattern-layer">
-        <div className="pattern-1" style={{ backgroundImage: 'url(assets/images/shape/shape-13.png)' }}></div>
-        <div className="pattern-2" style={{ backgroundImage: 'url(assets/images/shape/shape-14.png)' }}></div>
-      </div>
-      <div className="shape">
-        <div className="shape-1 float-bob-y" style={{ backgroundImage: 'url(assets/images/shape/shape-15.png)' }}></div>
-        <div className="shape-2"></div>
-        <div className="shape-3 float-bob-x" style={{ backgroundImage: 'url(assets/images/shape/shape-16.png)' }}></div>
-      </div>
-      <div className="auto-container">
-        <div className="sec-title mb_50">
-          <span className="sub-title">Our Team</span>
-          <h2>Meet our experienced doctors <br />for the best treatment</h2>
-        </div>
+    <section className="about-section pt_120 pb_120 bg-color-1">
+      <div
+        style={{
+          backgroundImage: "url(assets/images/resource/about.png)",
+          backgroundSize: "contain",
+        }}
+        className="auto-container"
+      >
         <div className="row clearfix">
-          {teamMembers.map((member, index) => (
-            <div key={index} className="col-lg-3 col-md-6 col-sm-12 team-block">
-              <div className="team-block-one wow fadeInUp animated" data-wow-delay={`${index * 200}ms`} data-wow-duration="1500ms">
-                <div className="inner-box">
-                  <div className="image-box">
-                    <figure className="image"><img src={member.image} alt={`${member.name}'s photo`} /></figure>
-                    <ul className="social-links clearfix">
-                      <li><Link href="/#"><i className="icon-4"></i></Link></li>
-                      <li><Link href="/#"><i className="icon-5"></i></Link></li>
-                      <li><Link href="/#"><i className="icon-6"></i></Link></li>
-                      <li><Link href="/#"><i className="icon-7"></i></Link></li>
-                    </ul>
-                  </div>
-                  <div className="lower-content">
-                    <h3><Link href="team-details">{member.name}</Link></h3>
-                    <span className="designation">{member.role}</span>
-                  </div>
+          <div className="col-lg-6 col-md-12 col-sm-12 content-column">
+            <div className="content_block_one">
+              <div className="content-box ml_30">
+                <div className="sec-title mb_15">
+                  <figure className="image">
+                    <img src="assets/images/resource/quyenloi-1.png" alt="" />
+                  </figure>
+
+                  <figure className="image">
+                    <img src="assets/images/resource/about-4.png" alt="" />
+                  </figure>
+                  <p>
+                    Orisdent là dòng răng sứ mới và cao cấp nhất hiện nay của
+                    Orodent năm 2024. Là nhà kết hợp sáng tạo, Lavie gửi tới
+                    khách hàng những ưu đãi vượt trội và khác biệt duy nhất:
+                  </p>
+                </div>
+                <div className="text-box mb_40">
+                  <ul className="list-style-one clearfix">
+                    <li>
+                      <img
+                        className="icon-gif"
+                        src="assets/images/resource/quyenloi-2.png"
+                        alt=""
+                      />
+                      <span>
+                        DUY NHẤT: Tặng 1 năm - Gói Bảo Hiểm Orisdent Smile Care.{" "}
+                      </span>
+                      Khi khách hàng làm 16 răng sứ Orisdent bất kì sẽ được tặng
+                      gói bảo hiểm 1 năm. Bảo hiểm chống rủi ro gãy vỡ dành cho
+                      răng sứ đã làm của hãng bảo hiểm VBI của Vietinbank, bảo
+                      hiểm 10 triệu VNĐ / ca răng.
+                    </li>
+                    <li>
+                      <img
+                        className="icon-gif"
+                        src="assets/images/resource/quyenloi-2.png"
+                        alt=""
+                      />
+                      <span>
+                        DUY NHẤT: Tặng ngay Voucher tiền mặt 10.000.000 VNĐ{" "}
+                      </span>
+                      cho khách hàng khi mua Vàng / Trang sức tại toàn bộ hệ
+                      thống của Bảo Tín Minh Châu. Bên cạnh đó, khách hàng sẽ
+                      được áp dụng thêm các mức Ưu đãi đặc biệt, tương đương
+                      hạng thẻ Bạch Kim tại hệ thống Vàng Bảo Tín Minh Châu.
+                    </li>
+                    <li>
+                      <img
+                        className="icon-gif"
+                        src="assets/images/resource/quyenloi-2.png"
+                        alt=""
+                      />
+                      <span>DUY NHẤT: Tặng 1 suất du lịch 3n2đ </span>
+                      tại khu nghỉ dưỡng PullMan Phú Quốc Beach Resort, khi làm
+                      răng sứ Orisdent không yêu cầu số lượng răng tối thiểu.
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-          ))}
+          </div>
+          <div className="col-lg-6 col-md-12 col-sm-12 image-column">
+            <div className="image_block_one">
+              <div className="image-box">
+                <figure className="image">
+                  <img src="assets/images/resource/quyenloi-3.png" alt="" />
+                </figure>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div className="bg-quyenloi">
+        <figure>
+          <img src="assets/images/resource/quyenloi.png" alt="" />
+        </figure>
       </div>
     </section>
   );
-};
-
+}

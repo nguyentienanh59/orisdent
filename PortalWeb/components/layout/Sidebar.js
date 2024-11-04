@@ -36,53 +36,31 @@ export default function Sidebar({ isSidebar, handleSidebar }) {
               <div className="content-inner">
                 <div className="logo">
                   <Link href="/">
-                    <img src="assets/images/logo.png" alt="" />
+                    <img src="assets/images/footer-logo.png" alt="" />
                   </Link>
                 </div>
                 <div className="content-box">
-                  <h4>Lavie</h4>
                   <p>Tra cứu bảo hành nha khoa Lavie</p>
-                  <p>Tra cứu bảo hành nha khoa Lavie</p>
-                  <Link href="about.html" className="theme-btn btn-one">
-                    <span>Lavie</span>
+                  <Link href="/" className="theme-btn btn-one">
+                    <span>Tra cứu bảo hành</span>
                   </Link>
                 </div>
                 <div className="contact-info">
-                  <h4>Lavie</h4>
+                  <h4>ORISDENT</h4>
                   <ul>
-                    <li>Chicago 12, Melborne City, USA</li>
+                    <li>Website: www.orisdent.vn</li>
                     <li>
-                      <Link href="tel:+8801682648101">+88 01682648101</Link>
+                      Số điện thoại:{" "}
+                      <Link href="tel:01989526503">0198-9526503</Link>
                     </li>
                     <li>
-                      <Link href="mailto:info@example.com">
-                        info@example.com
+                      Gmail:{" "}
+                      <Link href="mailto:LavieDental@gmail.com">
+                        LavieDental@gmail.com
                       </Link>
                     </li>
                   </ul>
                 </div>
-                <ul className="social-box">
-                  <li>
-                    <Link href="index-2.html">
-                      <i className="icon-4"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="index-2.html">
-                      <i className="icon-5"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="index-2.html">
-                      <i className="icon-6"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="index-2.html">
-                      <i className="icon-7"></i>
-                    </Link>
-                  </li>
-                </ul>
               </div>
             </div>
           </div>

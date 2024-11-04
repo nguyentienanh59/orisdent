@@ -1227,6 +1227,11 @@ Margin
   margin-left: 0;
   margin-right: 0;
 }
+
+.mr-15 {
+  margin-right: 15px;
+}
+
 .mx_1 {
   margin-left: 1px;
   margin-right: 1px;
@@ -4431,6 +4436,11 @@ Image Hover
 .flexbox_1 {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flexbox_3 {
+  display: flex;
   justify-content: center;
 }
 

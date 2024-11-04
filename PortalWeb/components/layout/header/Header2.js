@@ -28,14 +28,14 @@ export default function Header2({
                 </Link>
               </figure>
             </div>
-            <div className="menu-area">
-              {/* Mobile Navigation Toggler */}
-              {/* <div className="mobile-nav-toggler" onClick={handleMobileMenu}>
+            {/* <div className="menu-area">
+              Mobile Navigation Toggler
+              <div className="mobile-nav-toggler" onClick={handleMobileMenu}>
                   <i className="icon-bar"></i>
                   <i className="icon-bar"></i>
                   <i className="icon-bar"></i>
-                </div> */}
-              {/* Main Menu */}
+                </div>
+              Main Menu
               <nav className="main-menu navbar-expand-md navbar-light clearfix">
                 <div
                   className="collapse navbar-collapse show clearfix"
@@ -44,7 +44,7 @@ export default function Header2({
                   <Menu />
                 </div>
               </nav>
-            </div>
+            </div> */}
             {/* Menu Right Content */}
             <ul className="menu-right-content">
               <li
@@ -65,7 +65,7 @@ export default function Header2({
             <div className="logo-box">
               <figure className="logo">
                 <Link href="/">
-                  <img src="assets/images/logo.png" alt="" />
+                  <img src="assets/images/banner/oridenbanner2.png" alt="" />
                 </Link>
               </figure>
             </div>

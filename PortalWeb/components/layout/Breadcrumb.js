@@ -2,13 +2,7 @@ import Link from "next/link";
 
 export default function Breadcrumb({ breadcrumbTitle }) {
   return (
-    <section className="page-title p_relative centred">
-      <div
-        className="bg-layer"
-        style={{
-          backgroundImage: "url(assets/images/background/page-title.jpg)",
-        }}
-      ></div>
+    <section className="page-title bg-color-1 p_relative centred">
       <div className="pattern-layer">
         <div
           className="pattern-1"
