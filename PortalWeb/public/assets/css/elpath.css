@@ -2402,7 +2402,7 @@ Padding
   padding-right: 25px;
 }
 .px_24 {
-  padding: 0 48px 22px 48px !important;
+  padding: 8px 48px 22px!important
 }
 .px_30 {
   padding-left: 30px;
@@ -4436,7 +4436,6 @@ Image Hover
 .flexbox_1 {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
   justify-content: center;
 }
 

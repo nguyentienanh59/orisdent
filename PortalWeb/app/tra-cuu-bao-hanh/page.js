@@ -34,12 +34,9 @@ export default function Home() {
         footerStyle={1}
         breadcrumbTitle="Tra cứu bảo hành"
       >
-        <section className="process-section sec-pad bg-color-1">
+        <section className="process-section sec-pad bg-color-2">
           <div className="align-2 flexbox_1 p_20 mwp_100">
-            <div className="align-2 flexbox_1 p_20 wp_50 wpmb_100">
-              <figure className="image">
-                <img src="assets/images/resource/about-4.png" alt="" />
-              </figure>
+            <div className="align-2 flexbox_1 flex-start p_20 wp_50 wpmb_100">
               <Form
                 size="large"
                 layout="vertical"
@@ -60,32 +57,26 @@ export default function Home() {
                 >
                   <Input></Input>
                 </Form.Item>
-                <Button
-                  className="theme-btn btn-one"
-                  onClick={() => {
-                    form.submit();
-                  }}
-                >
-                  <span className="px_24">Tra cứu</span>
-                </Button>
               </Form>
-              <figure className="image">
-                <img src="assets/images/resource/about-4.png" alt="" />
-              </figure>
+              <Button
+                style={{ height: "3rem" }}
+                className="theme-btn btn-one"
+                onClick={() => {
+                  form.submit();
+                }}
+              >
+                <span className="px_24">Tra cứu</span>
+              </Button>
             </div>
           </div>
         </section>
 
         {/* {dataSearch && ( */}
-        <section className="process-section bg-color-1">
+        <section className="process-section bg-color-2">
           <div className="align-2 flexbox_1 p_20 mwp_100">
-            <div className="wp_50">
-              <Form size="large" form={form2} layout="horizontal">
-                <Form.Item
-                  className="wp_100"
-                  name="nameProduct"
-                  label="Sản phẩm"
-                >
+            <div className="align-2 flexbox_1 p_20 wp_50 wpmb_100">
+              <Form className="wp_100" size="large" form={form2}>
+                <Form.Item name="nameProduct" label="Sản phẩm">
                   <Input disabled></Input>
                 </Form.Item>
                 <Form.Item name="name" label="Họ và tên">
@@ -107,11 +98,11 @@ export default function Home() {
                   <Input disabled></Input>
                 </Form.Item>
               </Form>
+              <p>
+                Trân trọng cảm ơn Quý khách đã tin dùng và lựa chọn sản phẩm
+                Răng sứ cao cấp Orisdent.
+              </p>
             </div>
-            <p>
-              Trân trọng cảm ơn Quý khách đã tin dùng và lựa chọn sản phẩm Răng
-              sứ cao cấp Orisdent.
-            </p>
           </div>
         </section>
         {/* )} */}

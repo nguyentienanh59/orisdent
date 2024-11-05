@@ -110,13 +110,14 @@
 
 :root {
   --theme-color: #1d3ce2;
-  --secondary-color: #f9313b;
+  --secondary-color: #e1aa3a;
   --pink-color: #ffc0cb;
-  --violet-color: #ffa500;
+  --violet-color: #e1aa3a;
   --crimson-color: #dc143c;
   --orange-color: #ffa500;
   --text-color: rgb(255, 218, 158);
   --title-color: #0e1136;
+  --input-color: #00051c;
 }
 
 body {
@@ -143,13 +144,13 @@ body {
 .ant-form,
 .ant-form-item .ant-form-item-label > label,
 .ant-form-item .ant-form-item-explain-error {
-  color: #e1aa3a;
+  color: var(--secondary-color);
 }
 
 .ant-input-outlined,
 .ant-input-outlined:hover {
-  border-color: #e1aa3a !important;
-  background: #e1aa3a !important;
+  border-color: var(--secondary-color) !important;
+  background: var(--secondary-color) !important;
 }
 
 .large-container {
@@ -482,12 +483,20 @@ img {
   line-height: 24px;
   font-weight: 600;
   font-family: var(--soleil);
-  color: #fff !important;
+  color: var(--input-color) !important;
   text-align: center;
   border-radius: 40px;
   z-index: 1;
   box-shadow: 0px 2px 70px #9a6f36;
   transition: all 500ms ease;
+}
+
+.ant-btn-variant-outlined {
+  border-color: var(--secondary-color);
+}
+
+.ant-btn-variant-outlined:hover {
+  border-color: #9a6f36 !important;
 }
 
 .theme-btn.btn-one {
@@ -673,6 +682,14 @@ img {
 .pagination li a i {
   position: relative;
   font-size: 16px;
+}
+
+.ant-col {
+  width: 150px;
+}
+
+.ant-form-item .ant-form-item-label {
+  text-align: start;
 }
 
 .sec-pad {
@@ -1872,7 +1889,11 @@ button.ltr {
 }
 
 .bg-color-1 {
-  background-color: rgb(0, 5, 28);
+  background-color: var(--input-color);
+}
+
+.bg-color-2 {
+  background-color: var(--input-color);
 }
 
 .list-style-one li {
@@ -2365,7 +2386,7 @@ button.ltr {
   position: relative;
   padding-left: 100px;
   padding-right: 100px;
-  background: #00051c;
+  background: var(--input-color);
 }
 
 .main-header .menu-right-content {
@@ -2509,6 +2530,10 @@ button.ltr {
 
 .header-style-three .menu-right-content li {
   background: #f4f3f8;
+}
+
+.flex-start {
+  justify-content: flex-start;
 }
 
 .sticky-header .logo-box {

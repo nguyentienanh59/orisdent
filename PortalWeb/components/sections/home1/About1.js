@@ -1,37 +1,73 @@
-
 export default function About1() {
   return (
-    <section className="about-section bg-color-1 pt_120 pb_120">
-
+    <section className="about-section bg-color-2 pt_120 pb_120">
       <div className="auto-container">
-        <div className="row clearfix">
-          <div className="col-lg-6 col-md-12 col-sm-12 content-column">
-            <div className="content_block_one">
-              <div className="content-box ml_30">
-                <div className="sec-title mb_15">
-                  <span className="sub-title">Chi tiết</span>
-                  {/* <h2>Medical services & diagnostics</h2> */}
-                </div>
-                <div className="text-box mb_40">
-                  <ul className="list-style-one clearfix">
-                    <li>
-                      Phục hình Cercon được sản xuất bằng vật liệu chính hãng
-                      nhập khẩu bởi Công ty TNHH Dentsply Sirona Việt Nam
-                    </li>
-                    <li>
-                      Khách hàng sử dụng phục hình Cercon đúng với hướng dẫn của
-                      bác sĩ điều trị
-                    </li>
-                    <li>
-                      Bác sĩ điều trị và Labo nha khoa chịu trách nhiệm thực
-                      hiện và bảo hành 10 năm (*) để đảm báo tính thẩm mỹ, chức
-                      năng của phục hình
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="text-box mb_40">
+          <ul className="list-style-one clearfix">
+            <li>
+              <strong>THỜI HẠN BẢO HÀNH:</strong>
+              <p>
+                Trọn đời kể từ khi phục hình răng sứ Orisdent. Vui lòng giữ thẻ
+                bảo hành để đảm bảo quyền lợi.
+                <br />
+              </p>
+            </li>
+            <li>
+              <strong>TRƯỜNG HỢP TỪ CHỐI BẢO HÀNH:</strong>
+              <p>
+                - Thẻ bảo hành hết hạn, bị tẩy xóa hoặc không nguyên vẹn. Các
+                thông tin trên thẻ và giấy tờ cá nhân (CCCD/Hộ Chiếu/CMND) không
+                khớp.
+                <br />
+                - Phục hình bị gãy, vỡ do rơi, va chạm trước khi gắn vào miệng.
+                Nứt gãy do té ngã hoặc chấn thương. Những tổn thương răng sứ
+                không đến từ bản chất sản phẩm. Hoặc tổn thương do sử dụng sai
+                chỉ định của bác sĩ.
+                <br />
+              </p>
+            </li>
+            <li>
+              <strong>
+                MỘT SỐ LƯU Ý SAU KHI SỬ DỤNG PHỤC HÌNH RĂNG SỨ ORODENT:
+              </strong>
+              <p>
+                1. Sau khi gắn phục hình bạn cần thời gian để quen với phục hình
+                mới, răng và nướu có thể nhạy cảm vài ngày đầu khi mang phục
+                hình.
+                <br />
+                2. Không nên dùng răng sứ cắn hoặc nhai thức ăn quá cứng cũng
+                như thức ăn quá nóng hay quá lạnh. Súc miệng bằng nước muối ấm
+                có thể mang lại cảm giác dễ chịu hơn.
+                <br />
+                3. Vệ sinh răng miệng hàng ngày, kết hợp dùng chỉ nha khoa, nước
+                súc miệng. Có thể dùng ngón tay nhẹ nhàng xoa nướu để kích thích
+                lưu thông máu xung quanh viền nướu.
+                <br />
+                4. Tránh tối đa hút thuốc vì hút thuốc là nguyên nhân hàng đầu
+                làm răng bị ố vàng và xỉn mảu.
+                <br />
+                5. Nếu phục hình kênh hoặc cộm khi ăn nhai bạn nên liên hệ bác
+                sĩ điều trị.
+                <br />
+              </p>
+            </li>
+            <li>
+              <strong>LƯU Ý KHÁC:</strong>
+              <p>
+                1. Phục hình Orodent được sản xuất chính hãng bởi hãng Orodent
+                SRL (Italy), phân phối độc quyền bởi Công ty Dental Pro Việt
+                Nam.
+                <br />
+                2. Khách hàng sử dụng phục hình Orodent đúng với hướng dẫn của
+                bác sĩ điều trị.
+                <br />
+                3. Thẻ bảo hành Răng sứ Orodent có thể được yêu cầu xuất trình
+                khi khách hàng muốn hưởng các quyền lợi khi sử dụng dịch vụ ở
+                một số đối tác của Orodent tại Việt Nam.
+                <br />
+              </p>
+            </li>
+          </ul>
         </div>
       </div>
     </section>

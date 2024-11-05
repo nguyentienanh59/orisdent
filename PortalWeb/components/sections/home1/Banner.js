@@ -16,7 +16,7 @@ export default function Banner() {
               <figure className="image mobile-none upper-text mt-2">
                 <img src="assets/images/banner/oridenbanner3.png" alt="" />
               </figure>
-              <div className="btn-box mobile-none float-bob-y m_10">
+              <div className="btn-box mobile-none m_10">
                 <Link href="/tra-cuu-bao-hanh" className="theme-btn btn-four">
                   <span>Tra cứu bảo hành</span>
                 </Link>
@@ -26,7 +26,10 @@ export default function Banner() {
 
           <div className="col-lg-6 col-md-12 col-sm-12 image-column ">
             <div className="image-box image-bg-right">
-              <figure className="image ">
+              <figure
+                className="image"
+                style={{ position: "relative", zIndex: 1 }}
+              >
                 <img src="assets/images/banner/oridenbanner4.png" alt="" />
               </figure>
               <img
@@ -42,7 +45,7 @@ export default function Banner() {
               <figure className="image upper-text mt-2">
                 <img src="assets/images/banner/oridenbanner3.png" alt="" />
               </figure>
-              <div className="btn-box float-bob-y m_10">
+              <div className="btn-box m_10">
                 <Link href="/tra-cuu-bao-hanh" className="theme-btn btn-four">
                   <span>Tra cứu bảo hành</span>
                 </Link>
