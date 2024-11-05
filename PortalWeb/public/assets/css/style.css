@@ -139,6 +139,19 @@ body {
   }
 }
 
+.ant-form-item,
+.ant-form,
+.ant-form-item .ant-form-item-label > label,
+.ant-form-item .ant-form-item-explain-error {
+  color: #e1aa3a;
+}
+
+.ant-input-outlined,
+.ant-input-outlined:hover {
+  border-color: #e1aa3a !important;
+  background: #e1aa3a !important;
+}
+
 .large-container {
   max-width: 1550px;
   padding: 0px 15px;

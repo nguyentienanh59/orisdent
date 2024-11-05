@@ -12,6 +12,7 @@ export default function Home() {
   const [isSpin, setShowSpin] = useState(false);
   const [dataSearch, setDataSearch] = useState();
   const [form] = Form.useForm();
+  const [form2] = Form.useForm();
 
   const onFinish = async (values) => {
     setShowSpin(true);
@@ -58,7 +59,7 @@ export default function Home() {
                   required
                   label="Mã số thẻ"
                 >
-                  <Input required placeholder="Mã số thẻ"></Input>
+                  <Input required></Input>
                 </Form.Item>
               </Form>
               <Button
@@ -67,14 +68,51 @@ export default function Home() {
                   form.submit();
                 }}
               >
-                <span className="px_24"> Tra cứu bảo hành</span>
+                <span className="px_24">Tra cứu</span>
               </Button>
               {dataSearch && (
                 <Button
                   className="theme-btn btn-two"
                   onClick={() => setOpen(true)}
                 >
-                  <span className="px_24"> Xem bảng tra cứu</span>
+                  <span className="px_24">Xem bảng tra cứu</span>
+                </Button>
+              )}
+            </div>
+          </div>
+        </section>
+        <section className="process-section sec-pad bg-color-1">
+          <div className="align-2 flexbox_1 p_20 mwp_100">
+            <div className="align-2 flexbox_1 p_20 wp_50 wpmb_100">
+              <Form size="large" form={form2} className="wp_100">
+                <Form.Item
+                  name="numberCard"
+                  rules={[
+                    {
+                      required: true,
+                      message: "Vui lòng điền Mã số thẻ!",
+                    },
+                  ]}
+                  required
+                  label="Mã số thẻ"
+                >
+                  <Input required></Input>
+                </Form.Item>
+              </Form>
+              <Button
+                className="theme-btn btn-one"
+                onClick={() => {
+                  form.submit();
+                }}
+              >
+                <span className="px_24">Tra cứu</span>
+              </Button>
+              {dataSearch && (
+                <Button
+                  className="theme-btn btn-two"
+                  onClick={() => setOpen(true)}
+                >
+                  <span className="px_24">Xem bảng tra cứu</span>
                 </Button>
               )}
             </div>
