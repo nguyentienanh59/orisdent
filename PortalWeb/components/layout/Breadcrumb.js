@@ -24,12 +24,6 @@ export default function Breadcrumb({ breadcrumbTitle }) {
       <div className="auto-container">
         <div className="content-box">
           <h1>{breadcrumbTitle}</h1>
-          <ul className="bread-crumb clearfix">
-            <li>
-              <Link href="/">Trang chủ</Link>
-            </li>
-            <li>{breadcrumbTitle}</li>
-          </ul>
         </div>
       </div>
     </section>
